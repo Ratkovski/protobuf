@@ -10,13 +10,11 @@ fun main() {
         .setSalario(2000.20)
         .setAtivo(true)
         .setCargo(Cargo.DEV)
-        .addEnderecos(
-            FuncionarioRequest.Endereco.newBuilder()
-                .setLogradouro("Rua das Tabajara")
-                .setCep("89340-000")
-                .setComplemento("Casa 20")
-                .build().toString()
-        )
+        .addEnderecos(FuncionarioRequest.Endereco.newBuilder()
+                    .setLogradouro("Rua das Tabajara")
+                    .setCep("89340-000")
+                    .setComplemento("Casa 20")
+                    .build())
         .build()
 
     println(request)

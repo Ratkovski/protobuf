@@ -34,7 +34,7 @@ message FuncionarioRequest{
         string cep =2;
         string complemento =3;
     }
-    repeated string enderecos=7;
+    repeated Endereco enderecos=7;
 }
 
 
