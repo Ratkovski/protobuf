@@ -2,8 +2,9 @@ syntax = "proto3";
 
 option java_multiple_files = true;
 option java_package = "br.com.zup.edu";
-option java_outer_classname = "Protobuf";
-option objc_class_prefix = "HLW";
+//option java_outer_classname = "Protobuf";
+option java_outer_classname = "FuncionariosServiceOuterClass";
+//option objc_class_prefix = "HLW";//para objtice c ios
 
 package br.com.zup.edu;
 import "google/protobuf/timestamp.proto";
@@ -13,7 +14,7 @@ service FuncionarioService{
     rpc cadastrar(FuncionarioRequest) returns(FuncionarioResponse){}
 }
 enum Cargo{
-    DEV = 0;
+    DEV = 0;//é visto como default
     QA = 1;
     GERENTE = 2;
 
